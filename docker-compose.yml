@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+    netbank-client-development:
+        container_name: netbank-client-development
+        build: 
+            context: ./
+            dockerfile: Dockerfile
+            target: netbank-client-development
+        ports:
+            - "4200:4200"
+            - "49153:49153"
+        volumes:
+            - ".://usr/src/netback-client"
+            - /usr/src/netback-client/node_modules
+        environment:
+            - NODE_ENV=development
