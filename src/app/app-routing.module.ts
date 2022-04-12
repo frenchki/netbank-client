@@ -10,7 +10,7 @@ const routes: Routes = [
     },
     {
         path: "cards",
-        loadChildren: () => import("./cards/feature/card-shell/card.module").then((m) => m.CardRoutingModule)
+        loadChildren: () => import("./cards/feature/cards-shell/cards.module").then((m) => m.CardsModule)
     }
 ];
 
