@@ -10,7 +10,11 @@ const routes: Routes = [
         path: "account-list/:id",
         loadChildren: () => import("../account-detail/account-detail.module").then((m) => m.AccountDetailModule)
     },
+    {
+        path: "",
+        outlet: "left-sidebar",
 
+    }
 ];
 
 @NgModule({

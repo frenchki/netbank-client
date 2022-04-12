@@ -5,12 +5,15 @@ import { TranslateLoader, TranslateModule } from "@ngx-translate/core";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
+import { FourEightLayoutComponent } from "./shared/layouts/four-eight-layout.component";
+import { TwoTenLayoutComponent } from "./shared/layouts/two-ten-layout.component";
 import { RouteTitleService } from "./shared/services/route-title.service";
 import { HttpLoaderFactory } from "./shared/utilities/http-loader-factory";
 
 @NgModule({
     declarations: [
-        AppComponent
+        TwoTenLayoutComponent,
+        FourEightLayoutComponent
     ],
     imports: [
         BrowserModule,

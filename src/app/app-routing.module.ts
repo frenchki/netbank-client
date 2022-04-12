@@ -1,12 +1,12 @@
 import { NgModule } from "@angular/core";
 import { PreloadAllModules, RouterModule, Routes } from "@angular/router";
-import { RouterModule, Routes } from "@angular/router";
+import { TwoTenLayoutComponent } from "./shared/layouts/two-ten-layout.component";
 
 const routes: Routes = [
     {
         path: "accounts-and-payments",
         loadChildren: () => import("./accounts-and-payments/feature/accounts-and-payments-shell/accounts-and-payments.module").then((m) => m.AccountsAndPaymentsModule),
-const routes: Routes = [];
+        component: TwoTenLayoutComponent
     },
     {
         path: "cards",
